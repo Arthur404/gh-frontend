@@ -1,0 +1,29 @@
+.services {
+  position: relative;
+  background: #19394e;
+  color: #fff;
+  &.section {
+    padding-top: 12vw;
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      border-top: 10vw solid transparent;
+      border-right: 50vw solid #fff;
+      border-left: 50vw solid #fff;
+      z-index: 10;
+    }
+  }
+  &:after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background: url("../img/bg-services.png") 50% 80% /cover no-repeat;
+    opacity: 0.15;
+    z-index: 1;
+  }
+}

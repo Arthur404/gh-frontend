@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  background: url("../img/q.png"), url("../img/bg-hero.png") 50% 0 /cover no-repeat;
+  box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  color: #fff;
+  .section {
+    padding: 90px 0 170px;
+    &:after {
+      border-right: 51vw solid #ececec;
+      border-left: 49vw solid #ececec;
+      border-top: 15vw solid transparent;
+    }
+  }
+  .logo {
+    width: 260px;
+    height: 68px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .intro {
+    margin-top: 20px;
+    text-align: center;
+    font: italic 400 35px/40px $font-primary;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    .section {
+      padding: 140px 0 240px;
+    }
+    .intro {
+      font-size: 44px;
+      line-height: 60px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    .intro {
+      margin: 20px auto;
+      width: 70%;
+    }
+  }
+}
