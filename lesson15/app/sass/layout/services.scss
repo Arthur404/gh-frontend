@@ -4,6 +4,7 @@
   color: #fff;
   &.section {
     padding-top: 12vw;
+    padding-bottom: 90px;
     &:before {
       content: '';
       position: absolute;
@@ -11,8 +12,8 @@
       bottom: 0;
       left: 0;
       border-top: 10vw solid transparent;
-      border-right: 50vw solid #fff;
-      border-left: 50vw solid #fff;
+      border-right: 50vw solid #ececec;
+      border-left: 50vw solid #ececec;
       z-index: 10;
     }
   }
@@ -25,5 +26,38 @@
     background: url("../img/bg-services.png") 50% 80% /cover no-repeat;
     opacity: 0.15;
     z-index: 1;
+  }
+  ul {
+    li {
+      padding-top: 50px;
+    }
+    i {
+      display: block;
+      width: 100px;
+      margin: 0 auto;
+      position: relative;
+      font-size: 35px;
+      background-color: #ffcc00;
+      padding: 33px;
+      clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+      color: #fff;
+      z-index: 10;
+    }
+    h3 {
+      text-align: center;
+      margin: 10px 0;
+      font: 500 18px/28px 'Raleway', sans-serif;
+      color: #fff;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    ul {
+      li:nth-child(3n+1) {
+        padding-top: 0;
+      }
+    }
   }
 }

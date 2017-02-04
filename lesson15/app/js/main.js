@@ -19,3 +19,11 @@ $('.slider').slick({
     arrows: false,
     cssEase: 'ease-in'
 });
+
+$('.isotope').isotope({
+    itemSelector: '.masonry',
+    percentPosition: true,
+    masonry: {
+        columnWidth: '.masonry'
+    }
+});

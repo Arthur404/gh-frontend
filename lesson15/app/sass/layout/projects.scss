@@ -6,7 +6,7 @@
   &:after {
     content: '';
     position: absolute;
-    bottom: -10vw;
+    bottom: -9.9vw;
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     border-top: 10vw solid #fff;
@@ -51,6 +51,9 @@
         border-top: 1px solid #009aff;
         z-index: -1;
         transform: rotate(45deg) translateX(50%);
+      }
+      &:focus {
+        display: none;
       }
     }
   }
