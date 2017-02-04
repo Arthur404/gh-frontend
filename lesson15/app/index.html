@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Name Site</title>
+        <title>Quora</title>
         <!-- build:css css/vendor.css -->
         <link rel="stylesheet" href="css/vendor.min.css">
         <!-- endbuild -->
@@ -15,26 +15,29 @@
 <body>
     <section class="hero">
         <header>
-            <div class="container">
-                <nav class="main-nav">
-                    <button class="nav-btn"><i class="fa fa-bars"></i></button>
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">News</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="main-nav">
+                <button class="nav-btn open-btn" id="open-nav">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <button class="nav-btn close-btn" id="close-nav">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="container">
             <div class="section">
                 <h1 class="logo">
                     <a href="index.html">
-                        <img src="img/logo.png" alt="NameLogo">
-                        NameLogo
+                        <img src="img/logo.png" alt="Quora">
+                        Quora
                     </a>
                 </h1>
                 <h2 class="intro">
@@ -363,10 +366,56 @@
     </section>
     <footer class="foot">
         <div class="container section">
-            <span class="copy">
-                2015 &copy; Site
-            </span>
+            <div class="row">
+                <div class="info col-xs-12 col-sm-5">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac nunc venenatis, facilisis urna at, imperdiet justo. Morbi pharetra, elit eu interdum placerat.</p>
+                    <i class="fa fa-location-arrow"></i><address>Address: 121 First Street,<br>Anytown,CA 1244 USA.</address>
+                    <i class="fa fa-phone"></i> <a class="tel" href="tel:+80004564567890">(800) 0456 4567 890</a>
+                    <i class="fa fa-envelope-o"></i><a href="mailto:info@quoradigital.com">info@quoradigital.com</a>
+                </div>
+                <div class="nav-foot col-xs-6 col-sm-2">
+                    <h3 class="title-foot">Navigation</h3>
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Templates</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="more-about col-xs-6 col-sm-2">
+                    <h3 class="title-foot">MORE ABOUT Quora</h3>
+                    <ul>
+                        <li><a href="">Corporate Office</a></li>
+                        <li><a href="">Jobs at Quora</a></li>
+                        <li><a href="">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter col-xs-12 col-sm-3">
+                    <h3 class="title-foot">Newsletter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <form class="email-form" action="#">
+                        <input class="email" type="email" name="email" required placeholder="Enter your email address">
+                        <button class="email-btn"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                    <ul class="social flex-content">
+                        <li class="fb"><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li class="google"><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li class="in"><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li class="pin"><a href=""><i class="fa fa-pinterest"></i></i></a></li>
+                        <li class="tw"><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li class="mess"><a href=""><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <span class="copy">
+            <a href="#" id="up"><i class="fa fa-long-arrow-up"></i></a>
+            &copy; 2015 quoradigital.com
+        </span>
     </footer>
     <!-- build:js js/vendor.js -->
     <script src="bower/jquery/dist/jquery.js"></script>
