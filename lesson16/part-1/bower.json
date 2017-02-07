@@ -1,0 +1,23 @@
+{
+  "name": "BusinessPluss",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Arthur404/Ivaschenko-Arthur",
+  "authors": [
+    "Arthur404 <ananarben@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "app/bower_components"
+  ],
+  "dependencies": {
+    "jquery": "3.1.1",
+    "meyer-reset": "*"
+  },
+  "description": "",
+  "main": "",
+  "license": "MIT"
+}

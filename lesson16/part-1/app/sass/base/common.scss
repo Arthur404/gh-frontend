@@ -1,0 +1,35 @@
+ul {
+  text-align: center;
+  li {
+    float: left;
+    clear: both;
+    span {
+      float: left;
+      margin-top: 12px;
+      font: 700 24px 'Open Sans', sans-serif;
+    }
+  }
+  .btn-click {
+    float: left;
+    margin: 5px 10px;
+    padding: 12px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: #2eafbe;
+    font: 700 16px 'Open Sans', sans-serif;
+    color: #000000;
+    transition: 0.3s all ease-out;
+    cursor: pointer;
+    &:hover, &:focus {
+      background: #d777bf;
+      outline: none;
+    }
+  }
+  .new-class {
+    width: 200px;
+  }
+  .btn-remove-class, .btn-toggle-class {
+    width: 200px;
+  }
+}
