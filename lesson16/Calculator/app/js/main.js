@@ -3,79 +3,64 @@ var Fcalc = document.calc,
     FlagNewNum = false,
     PendingOp = undefined;
 
-function NumPressed (Num)
-{
-    if (FlagNewNum)
-    {
-        Fcalc.ReadOut.value = Num;
-        FlagNewNum = false;
-    }
-    else
-    {
-        if (Fcalc.ReadOut.value == "0")
-            Fcalc.ReadOut.value = Num;
+$(document).ready(function () {
+    $('.NumPressed').on('click', function () {
+        if (FlagNewNum)
+        {
+            Fcalc.ReadOut.value = $(this).text();
+            FlagNewNum = false;
+        }
         else
-            Fcalc.ReadOut.value += Num;
-    }
-}
+        {
+            if (Fcalc.ReadOut.value == "0")
+                Fcalc.ReadOut.value = $(this).text();
+            else
+                Fcalc.ReadOut.value += $(this).text();
+        }
+    });
 
-function Operation (Op)
-{
-    var Readout = Fcalc.ReadOut.value;
-    if (FlagNewNum && PendingOp != "=")
-    {
-        Fcalc.ReadOut.value = Currents;
-    }
-    else
-    {
+    $('.operator').on('click', function () {
+        var Readout = Fcalc.ReadOut.value;
+        if (FlagNewNum && PendingOp != "=")
+        {
+            Fcalc.ReadOut.value = Currents;
+        }
+        else
+        {
+            FlagNewNum = true;
+            if ( '+' == PendingOp )
+                Currents += parseFloat(Readout);
+            else if ( '-' == PendingOp )
+                Currents -= parseFloat(Readout);
+            else if ( '/' == PendingOp )
+                Currents /= parseFloat(Readout);
+            else if ( '*' == PendingOp )
+                Currents *= parseFloat(Readout);
+            else
+                Currents = parseFloat(Readout);
+            Fcalc.ReadOut.value = Currents;
+            PendingOp = $(this).text();
+        }
+    });
+
+    $('.dot').on('click', function () {
+        var curReadOut = Fcalc.ReadOut.value;
+        if (FlagNewNum)
+        {
+            curReadOut = "0.";
+            FlagNewNum = false;
+        }
+        else
+        {
+            if (curReadOut.indexOf(".") == -1)
+                curReadOut += ".";
+        }
+        Fcalc.ReadOut.value = curReadOut;
+    });
+    $('.clear').on('click', function () {
+        Fcalc.ReadOut.value = "0";
         FlagNewNum = true;
-        if ( '+' == PendingOp )
-            Currents += parseFloat(Readout);
-        else if ( '-' == PendingOp )
-            Currents -= parseFloat(Readout);
-        else if ( '/' == PendingOp )
-            Currents /= parseFloat(Readout);
-        else if ( '*' == PendingOp )
-            Currents *= parseFloat(Readout);
-        else
-            Currents = parseFloat(Readout);
-        Fcalc.ReadOut.value = Currents;
-        PendingOp = Op;
-    }
-}
-
-function Decimal ()
-{
-    var curReadOut = Fcalc.ReadOut.value;
-    if (FlagNewNum)
-    {
-        curReadOut = "0.";
-        FlagNewNum = false;
-    }
-    else
-    {
-        if (curReadOut.indexOf(".") == -1)
-            curReadOut += ".";
-    }
-    Fcalc.ReadOut.value = curReadOut;
-}
-
-function ClearEntry ()
-{
-    Fcalc.ReadOut.value = "0";
-    FlagNewNum = true;
-}
-
-function Clear ()
-{
-    Currents = 0;
-    PendingOp = "";
-    ClearEntry();
-
-}
-
-function Neg ()
-{
-    Fcalc.ReadOut.value =
-        parseFloat(Fcalc.ReadOut.value) * -1;
-}
+        Currents = 0;
+        PendingOp = undefined;
+    });
+});
