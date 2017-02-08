@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  margin-top: 145px;
+  background: url("../img/slider-bg.jpg") 50% 0 /cover no-repeat;
+  overflow: hidden;
+  color: #000;
+  .welcome {
+    margin-bottom: 15px;
+    h2 {
+      display: inline-block;
+      clear: both;
+      margin-top: 10px;
+      padding: 0 10px;
+      background: $color-primary;
+      font: 400 50px/60px $font-primary;
+      text-transform: uppercase;
+    }
+  }
+  .intro span {
+    display: inline-block;
+    margin-top: 1px;
+    padding: 0 5px;
+    background: $color-content;
+    font: 400 24px/33px $font-primary;
+    color: #fff;
+  }
+  .hero-img {
+    width: 100%;
+    img {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+  .btn {
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+  }
+}
