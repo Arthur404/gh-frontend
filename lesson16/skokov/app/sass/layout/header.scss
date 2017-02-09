@@ -30,9 +30,6 @@ header {
         outline: none;
       }
     }
-    .flex-content {
-      flex-direction: column;
-    }
     .navigation {
       display: none;
       position: absolute;
@@ -52,6 +49,52 @@ header {
         font: 400 16px/32px $font-content;
         text-transform: uppercase;
         color: #000;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  header {
+    .main-nav {
+      .nav-btn {
+        display: none;
+      }
+      .navigation {
+        display: inline-block;
+        position: relative;
+        float: right;
+        top: auto;
+        width: auto;
+        transform: translateY(65%);
+        left: auto;
+        background: transparent;
+        li {
+          float: left;
+          height: 65px;
+          margin-left: 20px;
+          padding: 15px 0;
+        }
+        li:hover, li.active {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    .logo {
+      margin: 25px 0;
+    }
+    .main-nav {
+      .navigation {
+        transform: translateY(75%);
+        li {
+          margin-left: 40px;
+        }
       }
     }
   }

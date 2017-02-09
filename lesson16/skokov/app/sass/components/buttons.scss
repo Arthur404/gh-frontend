@@ -1,36 +1,44 @@
 .btn {
   display: block;
-  min-width: 120px;
+  position: relative;
+  width: 170px;
   height: 40px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #000;
-  background: transparent;
-  font: 700 12px 'Aria';
-  text-transform: uppercase;
-  color: #000;
+  border-radius: 0;
+  border: none;
+  background: #000;
+  font: 400 20px $font-content;
+  color: #fff;
   transition: 0.3s all ease-out;
   cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 170px;
+    bottom: -1px;
+    left: 0;
+    border-bottom: 3px solid $color-primary;
+  }
   &:hover, &.active-btn {
     outline: none;
-    background-color: #000;
+    background-color: $color-primary;
    	color: #fff;
+    &:after {
+      border-bottom: 3px solid #000;
+    }
   }
   &:focus {
     outline: none;
     color: #fff;
   }
-  &:active:focus {
-    outline: none;
-   	color: #fff;
-  }
 }
 
 @media (min-width: 768px) {
   .btn {
-    min-width: 150px;
-    height: 50px;
-    padding: 15px;
-    font-size: 14px;
+    min-width: 191px;
+    padding: 0;
+    font-size: 24px;
+    &:after {
+      width: 191px;
+    }
   }
 }

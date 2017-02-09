@@ -1,7 +1,7 @@
 //slider
 $('.slider').slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     cssEase: 'ease-in'
 });
 
