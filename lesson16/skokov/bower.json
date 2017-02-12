@@ -18,7 +18,9 @@
     "font-awesome": "fontawesome#4.7.0",
     "bootstrap-sass": "^3.3.7",
     "meyer-reset": "*",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "isotope": "^3.0.2",
+    "masonry": "^4.1.1"
   },
   "description": "",
   "main": "",

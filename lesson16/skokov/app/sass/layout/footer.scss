@@ -1,15 +1,31 @@
-.footer {
-  background-color: #2a2b2c;
+.foot {
+  background-color: #000;
+  color: #fff;
   overflow: hidden;
   .copy {
-    display: block;
     margin: 10px 0 30px;
-    font: 600 13px/24px #000;
-    text-transform: uppercase;
+    font: 400 14px/32px $font-primary;
+  }
+  .navigation {
+    margin: 20px 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    a {
+      padding: 0 20px;
+      font: 400 16px/32px $font-content;
+      text-transform: uppercase;
+      color: #fff;
+    }
   }
 }
 
 @media (min-width: 768px) {
-  .footer {
+  .foot {
+    .copy {
+      float: left;
+    }
+    .navigation {
+      justify-content: flex-end;
+    }
   }
 }

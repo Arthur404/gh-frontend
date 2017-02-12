@@ -23,3 +23,34 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?u06qv7');
+  src:  url('../fonts/icomoon.eot?u06qv7#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?u06qv7') format('truetype'),
+  url('../fonts/icomoon.woff?u06qv7') format('woff'),
+  url('../fonts/icomoon.svg?u06qv7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back:before {
+  content: "\e900";
+}
+.icon-next:before {
+  content: "\e901";
+}
+
