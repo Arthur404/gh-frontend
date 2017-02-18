@@ -1,0 +1,41 @@
+.boat {
+  position: relative;
+  background: linear-gradient(rgba(85,85,85,0.6), rgba(85,85,85,0.6)), url("../video/River.png") 50% 0 /cover no-repeat;
+  padding: 280px 0 250px;
+  color: #f9fafe;
+  overflow: hidden;
+  #video-bg {
+    z-index: 10;
+    video {
+      display: none;
+      position: absolute;
+      top: -25%;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+    }
+  }
+  @supports (object-fit: cover) {
+    #video-bg > video {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .boat {
+    background: rgba(85,85,85,0.6);
+    #video-bg {
+      video {
+        display: block;
+      }
+    }
+  }
+}

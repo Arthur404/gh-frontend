@@ -1,0 +1,221 @@
+.destination {
+  padding: 90px 0 70px;
+  .statistic {
+    position: relative;
+    margin: -90px auto;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
+    z-index: 100;
+    li {
+      padding: 10px 0;
+      text-align: center;
+    }
+    .statistic-wrap {
+      width: 100%;
+      padding: 5px 0;
+      margin: 0 auto;
+      border-right: 1px solid rgba(113, 113, 113, 0.3);
+      text-align: center;
+    }
+    li:last-child .statistic-wrap {
+      border: none;
+    }
+    .statistic-value {
+      display: block;
+      margin-bottom: 15px;
+      font: 700 24px/22px $font-content;
+      color: #343434;
+    }
+    .statistic-name {
+      font: 400 18px/22px $font-content;
+      color: #717171;
+    }
+  }
+  .country {
+    li {
+      position: relative;
+      padding: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      &:hover .country-img {
+        padding: 0;
+        transform: scale(1.3);
+      }
+    }
+    .item-more {
+      display: none;
+    }
+    .country-img {
+      position: relative;
+      width: 100%;
+      border-radius: 5px;
+      transition: 0.5s all ease-out;
+      cursor: pointer;
+      &:after {
+        content: '';
+        background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+        position: absolute;
+        border-radius: 5px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: -3px;
+  }
+    .about-country {
+      color: #fff;
+      .number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 30px;
+        display: block;
+        width: 82px;
+        height: 42px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+        background: $color-primary;
+        font: 700 16px/22px $font-content;
+        span {
+          margin-left: 5px;
+        }
+      }
+      h3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0 0 60px 30px;
+        font: 400 26px/30px $font-primary;
+      }
+      p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 30px;
+        font: 400 18px/28px $font-primary;
+      }
+    }
+  }
+  .btn-more {
+    display: block;
+    width: 310px;
+    height: 60px;
+    margin: 80px auto 10px;
+    background: transparent;
+    border: 1px solid rgba(38, 38, 38, 0.3);
+    border-radius: 5px;
+    font: 700 14px/22px $font-primary;
+    color: #343434;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.modal-window {
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: #fff;
+  .modal-img {
+    position: relative;
+    width: 50%;
+    border-radius: 5px;
+    transition: 0.5s all ease-out;
+    cursor: pointer;
+    margin: 0 auto;
+    transform: translateY(50%);
+    z-index: 115;
+    &:after {
+      content: '';
+      background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+      position: absolute;
+      border-radius: 5px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 125;
+    }
+    img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: -3px;
+      z-index: 120;
+    }
+  }
+  .modal-img-4 {
+    width: 80%;
+  }
+  .title-popup {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    font: 700 22px/22px $font-primary;
+  }
+  p {
+    position: absolute;
+    width: 80%;
+    margin: 10px;
+    bottom: 0;
+    left: 0;
+    font: 400 14px/22px $font-content;
+    z-index: 150;
+  }
+  .btn-modal {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    display: block;
+    width: 82px;
+    height: 42px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background: $color-primary;
+    font: 700 16px/22px $font-content;
+  }
+}
+
+@media (min-width: 768px) {
+  .destination {
+    .statistic {
+      li {
+        padding: 30px 0;
+      }
+      .statistic-wrap {
+        padding: 10px 0;
+      }
+      .statistic-value {
+        font-size: 30px;
+      }
+    }
+  }
+  .main-modal {
+    color: #fff;
+    .title-popup {
+      top: 10%;
+      font-size: 30px;
+    }
+    p {
+      margin: 30px;
+      font-size: 20px;
+    }
+  }
+}

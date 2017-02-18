@@ -1,0 +1,30 @@
+{
+  "name": "NAVA",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Arthur404/Ivaschenko-Arthur",
+  "authors": [
+    "Arthur404 <ananarben@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower",
+    "bower_components",
+    "test",
+    "tests",
+    "app/bower_components",
+    "app/bower"
+  ],
+  "dependencies": {
+    "jquery": "3.1.1",
+    "font-awesome": "fontawesome#4.7.0",
+    "bootstrap-sass": "^3.3.7",
+    "meyer-reset": "*",
+    "slick-carousel": "^1.6.0",
+    "isotope": "^3.0.2",
+    "masonry": "^4.1.1"
+  },
+  "description": "",
+  "main": "",
+  "license": "MIT"
+}
