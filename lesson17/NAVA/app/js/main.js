@@ -9,7 +9,7 @@ $(document).ready(function() {
             e.preventDefault();
             $(".item-more:hidden").slice(0, 3).slideDown();
             if ($(".item-more:hidden").length == 0) {
-                $("#load").fadeOut('slow');
+                $(".load").fadeOut('slow');
             }
             $('html,body').animate({
                 scrollTop: $(this).offset().top
@@ -17,12 +17,34 @@ $(document).ready(function() {
         });
     });
 
-    $('.country-img').click(function () {
+    $(function () {
+        $(".boat-item").slice(0, 4).show();
+        $(".more-btn").on('click', function (e) {
+            e.preventDefault();
+            $(".boat-item:hidden").slice(0, 2).slideDown();
+            if ($(".boat-item:hidden").length == 0) {
+                $(".loader").fadeOut('slow');
+            }
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 1000);
+        });
+    });
+
+    $('.destination .country-img').click(function () {
         var popup_id = $('#' + $(this).attr("rel"));
         $(popup_id).slideDown(500);
     });
     $('.btn-modal').click(function () {
-       $('.modal-window').slideUp(500);
+       $('.destination .modal-window').slideUp(500);
+    });
+
+    $('.btn-boat').click(function () {
+        var popup_id = $('#' + $(this).attr("rel"));
+        $(popup_id).slideDown(500);
+    });
+    $('.btn-modal').click(function () {
+        $('.modal-money').slideUp(500);
     });
 
     var options = [

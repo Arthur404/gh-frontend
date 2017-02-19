@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background: linear-gradient(rgba(85,85,85,0.6), rgba(85,85,85,0.6)), url("../video/Kayak.png") 50% 0 /cover no-repeat;
+  background: linear-gradient(rgba(85,85,85,0.6), rgba(85,85,85,0.6)), url("../video/Kayak.jpg") 50% 0 /cover no-repeat;
   color: #f9fafe;
   height: 100vh;
   overflow: hidden;
@@ -154,17 +154,6 @@
         border: 1px solid #f9fafe;
         border-radius: 5px;
         background-color: rgba(201, 9, 4, 0);
-      }
-    }
-    .intro {
-      width: 80%;
-      h2 {
-        font-size: 50px;
-        line-height: 60px;
-      }
-      p {
-        margin: 30px 0 70px;
-        font-size: 30px;
       }
     }
     .find {
