@@ -22,7 +22,8 @@
     "meyer-reset": "*",
     "slick-carousel": "^1.6.0",
     "isotope": "^3.0.2",
-    "masonry": "^4.1.1"
+    "masonry": "^4.1.1",
+    "jquery-ui": "^1.12.1"
   },
   "description": "",
   "main": "",
