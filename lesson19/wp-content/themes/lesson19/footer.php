@@ -6,20 +6,20 @@
                     <?php the_custom_logo(); ?>
                 </a>
                 <span class="copy">
-                        2015 &copy; lawyer.
-                    </span>
+                    <?= date('Y ') ?><?php echo get_theme_mod('copy'); ?>
+                </span>
                 <ul class="social flex-content">
                     <li class="fb">
-                        <i class="fa fa-facebook"></i>
+                        <a href="<?php echo get_theme_mod('url_facebook'); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
                     </li>
                     <li class="google">
-                        <i class="fa fa-google-plus"></i>
+                        <a href="<?php echo get_theme_mod('url_google'); ?>" target="_blank"><i class="fa fa-google-plus"></i></a>
                     </li>
                     <li class="tw">
-                        <i class="fa fa-twitter"></i>
+                        <a href="<?php echo get_theme_mod('url_twitter'); ?>" target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li class="in">
-                        <i class="fa fa-linkedin"></i>
+                        <a href="<?php echo get_theme_mod('url_linkedin'); ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </li>
                 </ul>
             </div>

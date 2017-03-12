@@ -27,6 +27,9 @@
       text-align: center;
       transition: 0.3s all ease-out;
       cursor: pointer;
+      a {
+        color: $color-footer;
+      }
       i {
         font-size: 15px;
         transition: 0.3s all ease-out;
@@ -40,9 +43,14 @@
     }
   }
   .navigation {
-    list-style: url(../img/marker.svg) inside;
     li {
       border-bottom: 1px solid #373839;
+      &:before {
+        content: "\e902";
+        font-family: 'icomoon';
+        font-size: 12px;
+        color: $color-primary;
+      }
       a {
         padding-left: 5px;
         font: 600 12px/39px $font-content;

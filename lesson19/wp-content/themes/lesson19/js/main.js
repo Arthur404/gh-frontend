@@ -8,6 +8,8 @@ $(document).ready(function () {
     $('a[href$="home/"]').ready(function () {
         $('.hero').removeClass('blog-page')
     });
+    $('.article blockquote').addClass('col-xs-11 col-xs-offset-1');
+    $('.avatar-blog img').addClass('img-circle');
 //slider
     $('.slider-hero').slick({
         dots: true,
@@ -68,10 +70,10 @@ $(document).ready(function () {
             $('.count-com').html(+$('.count-com').html() + 1);
             controlCom.progressIncrement();
         });
-        $('.views').click(function () {
+        /*$('.views').click(function () {
             $('.count-view').html(+$('.count-view').html() + 1);
             controlView.progressIncrement();
-        });
+        });*/
         $('.progress').progressInitialize();
         var controlCom = $('.control'),
             controlView = $('.control-view');

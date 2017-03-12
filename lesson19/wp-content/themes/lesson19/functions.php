@@ -39,3 +39,10 @@ function homework_setup() {
     ));
 }
 add_action('after_setup_theme', 'homework_setup');
+
+require get_template_directory() . '/inc/customizer.php';
+
+require get_template_directory() . '/inc/custom_post_type.php';
+
+function remove_more_link() { return ''; }
+add_filter('the_content_more_link', 'remove_more_link');

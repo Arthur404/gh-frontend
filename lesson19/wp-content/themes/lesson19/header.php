@@ -15,7 +15,7 @@
                     <h1 class="logo">
                         <?php the_custom_logo(); ?>
                     </h1>
-                    <div class="tel"><a href="tel:+99788856999">+9978 8856 999</a></div>
+                    <div class="tel"><a href="tel:<?php echo get_theme_mod('add_phone_number'); ?>"><?php echo get_theme_mod('add_phone_number'); ?></a></div>
                     <button class="navbar-toggle collapsed nav-btn" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                         <i class="fa fa-bars"></i>
                     </button>
