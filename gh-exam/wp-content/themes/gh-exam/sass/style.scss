@@ -1,0 +1,44 @@
+/*!
+Theme Name: gh-exam
+Theme URI: http://underscores.me/
+Author: Arthur Ivashenko
+Description: geekhub exam
+Version: 1.0.0
+*/
+
+/*--------------------------------------------------------------
+# Utils
+--------------------------------------------------------------*/
+@import "utils/var";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/common";
+@import "base/fonts";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/buttons";
+@import "components/slider";
+@import "components/contact-form";
+@import "components/pagination";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/header";
+@import "layout/_hero";
+@import "layout/footer";
+@import "layout/about-us";
+@import "layout/services";
+@import "layout/clients";
+@import "layout/news";
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+@import "pages/blog-page";
+@import "pages/not-found";
+@import "pages/_blog-single";
